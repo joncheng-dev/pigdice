@@ -12,15 +12,21 @@ function turn() {
   let temp = 0;
   let rollAgain = true;
 
-  let result = diceRoll();
-  temp = temp + result;
-  console.log(temp);
+  // let result = diceRoll();
+  // temp = temp + result;
+  // console.log(temp);
 
   if (rollAgain === true) {
     let result = diceRoll();
-    temp = temp + result;
+    if (result === 1) {
+      console.log(temp);
+    } else {
+      temp = temp + result;
     console.log(temp);
+    }
+    
   }
+  
 }
  
 
