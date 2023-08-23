@@ -19,6 +19,13 @@ Code: diceRoll()
 Expected Output: 1-6
 
 
+Describe: Player() constructor function
+
+Test 2: "This will add a player and initialize score to 0"
+Code: Player("Paul")
+Expected Output: Player: {name: "Paul", score:0}
+
+
 ```
 
 ## Technologies Used
