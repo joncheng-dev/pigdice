@@ -63,6 +63,16 @@ firstPlayer.updateScore(roundScore);
 firstPlayer;
 Expected Output: 
 {name: "Jon", score: 25;}
+
+Describe: rollLogic()
+
+Test 8: "Upon passing in an argument of roundPoints being zero, this function should call the diceRoll function, and return a sum of roundPoints plus the result of the diceRoll."
+Code:
+let roundPoints = 0;
+let current = rollPoints(roundPoints);
+current;
+Expected Output: 5
+
 ```
 
 ## Technologies Used
