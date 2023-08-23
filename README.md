@@ -38,7 +38,7 @@ turn();
 console.log(temp);
 Expected Output: 1
 
-Test 3: "This will call the diceRoll function a second time and increment the temp variable"
+Test 4: "This will call the diceRoll function a second time and increment the temp variable"
 Code: 
 turn();
 Expected Output: 1-6, 1-6

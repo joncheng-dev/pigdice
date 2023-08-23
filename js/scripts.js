@@ -10,10 +10,22 @@ function Player(name) {
 
 function turn() {
   let temp = 0;
+  let rollAgain = true;
+
   let result = diceRoll();
   temp = temp + result;
   console.log(temp);
+
+  if (rollAgain === true) {
+    let result = diceRoll();
+    temp = temp + result;
+    console.log(temp);
+  }
 }
+ 
+
+
+
 
 
 // User Interface Logic
