@@ -1,3 +1,5 @@
+Co-authored-by: Ian Bravo <bravo.ian@gmail.com>
+
 Co-authored-by: Jonathan Cheng <joncheng.dev@gmail.com>"
 
 
@@ -26,6 +28,20 @@ Code:
 let playerOne = new Player("Paul");
 playerOne;
 Expected Output: Player: {name: "Paul", score:0}
+
+
+Describe: turn()
+
+Test 3: "This will call the diceRoll function, and save the value into a temp variable."
+Code: 
+turn();
+console.log(temp);
+Expected Output: 1
+
+Test 3: "This will call the diceRoll function a second time and increment the temp variable"
+Code: 
+turn();
+Expected Output: 1-6, 1-6
 
 
 ```
@@ -67,5 +83,32 @@ Copyright (c) _date_ _author name(s)_
 
 <!-- Brainstorming -->
 ```
+
+
+We need:
+A function that rolls a die.
+
+Initializes a temp score
+let temp = 0;
+
+If roll is 1, temp score is set to 0.
+And turn is over.
+
+If roll is 2-6, add to the temp score.
+(player can click roll to keep rolling)
+(player can click end turn to add temp to player score)
+
+Change to next player.
+
+click -> person clicks button to roll
+click -> person clicks end turn to save score to object
+
+function tempScoreTracker() {
+
+}
+
+function roll() {
+  let temp = 0
+}
 
 ```
