@@ -1,8 +1,25 @@
+Co-authored-by: Jonathan Cheng <joncheng.dev@gmail.com>"
+
+
+
+
 # _{Application Name}_
 
 #### By _**{List of contributors}**_
 
 #### _{Brief description of application}_
+
+## Tests
+
+```javascript
+Describe: diceRoll()
+
+Test 1: "It should return a random number between 1 and 6."
+Code: diceRoll()
+Expected Output: 1-6
+
+
+```
 
 ## Technologies Used
 
@@ -35,3 +52,11 @@ _{Leave nothing to chance! You want it to be easy for potential users, employers
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
 Copyright (c) _date_ _author name(s)_
+
+
+
+
+<!-- Brainstorming -->
+```
+
+```
