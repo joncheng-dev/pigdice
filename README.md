@@ -43,14 +43,26 @@ Code:
 turn();
 Expected Output: 1-6, 1-6
 
-Test 5: "This will end the diceRoll function when a 1 is rolled"
+Test 5: "This will end the turn diceRoll function when a 1 is rolled"
 Code:
 turn();
 Expected Output: 0
 
-Test 6: 
-Code:
+Test 6: This will run the turn function until a 1 is rolled
+Code: turn();
+Expected Output: lots of numbers until a 1 is rolled then it will console.log a 0.
+
+
+Describe: Player.prototype.updateScore 
+
+Test 7: "It should add the player's round score to the total score."
+Code: 
+let firstPlayer = new Player("Jon");
+let roundScore = 25;
+firstPlayer.updateScore(roundScore);
+firstPlayer;
 Expected Output: 
+{name: "Jon", score: 25;}
 ```
 
 ## Technologies Used
