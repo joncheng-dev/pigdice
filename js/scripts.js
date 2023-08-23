@@ -8,6 +8,10 @@ function Player(name) {
   this.score = 0;
 }  
 
+Player.prototype.updateScore = function (roundScore) {
+  this.score += roundScore;
+}
+
 function turn() {
   let temp = 0;
   let rollAgain = true;
