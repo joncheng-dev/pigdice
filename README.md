@@ -43,7 +43,14 @@ Code:
 turn();
 Expected Output: 1-6, 1-6
 
+Test 5: "This will end the diceRoll function when a 1 is rolled"
+Code:
+turn();
+Expected Output: 0
 
+Test 6: 
+Code:
+Expected Output: 
 ```
 
 ## Technologies Used
