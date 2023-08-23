@@ -3,10 +3,47 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <script src="js/scripts.js"></script>
-  <title>Document</title>
+  <title>Pig Dice</title>
 </head>
 <body>
-  
+  <div class="container">
+    <h1>Pig Dice</h1>
+    <div class="row">
+      <div class="col-6">
+        <img src="https://thenounproject.com/api/private/icons/1855226/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="player-1-icon">
+      </div>
+      <div class="col-6">
+        <img src="https://thenounproject.com/api/private/icons/1855226/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0" alt="player-2-icon">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <p id="player-1-score">player 1 score</p>
+      </div>
+      <div class="col-6">
+        <p id="player-2-score">player 2 score</p>
+      </div>
+    </div>
+    <div class="row">
+      <button id="temp-score">tempScore</button>
+    </div>
+    <div class="row">
+      <button id="dice-rolled">what num was rolled</button>
+    </div>
+    <div class="row">
+      <div class="col-4">
+        <button type="button" class="btn-roll-again" id="call-turn-function">Roll</button>
+        <button type="button" class="btn-end-turn" id="call-update-score">End Turn</button>
+      </div>
+      <div class="col-4">
+        <p id="announcements-div"></p>
+      </div>
+      <div class="col-4">
+        <img src="img/img:pauls-pig-photo.jpg" alt="Paul's pig photo">
+      </div>
+    </div>
+  </div>  
 </body>
 </html>
