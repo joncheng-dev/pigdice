@@ -6,6 +6,7 @@ function diceRoll() {
 function Player(name) {
   this.name = name;
   this.score = 0;
+  this.currentPlayer = false;
 }  
 
 Player.prototype.updateScore = function (roundScore) {
@@ -18,24 +19,26 @@ Player.prototype.updateScore = function (roundScore) {
   //for end, it will mean that you hit the button or get roll a 1
 //}
 
-function switchPlayers(currentPlayer) {
-  if (currentPlayer === "Homer")
+// function switchPlayers(currentPlayer) {
+Player.prototype.switchPlayers = function () {
+  if (this.currentPlayer === false)
   {
-      currentPlayer = "Barney";
-  } else if (currentPlayer === "Barney")
+      this.currentPlayer = true;
+  } else if (this.currentPlayer === true)
   { 
-      currentPlayer = "Homer";
+      this.currentPlayer = false;
   }
-  return currentPlayer;
+  // return this.currentPlayer;
 }
-
 
 function rollLogic(roundPoints) {
     let result = diceRoll();
 
     if (result === 1) {
       roundPoints = 0;
-      
+      // Player.currentPlayers();
+      playerOne.switchPlayers();
+      playerTwo.switchPlayers();
     } else {
       roundPoints = roundPoints + result;
       console.log(roundPoints);
@@ -70,11 +73,14 @@ function gameSetter() {
   let playerTwo = new Player("Barney");
   displayTotalScore(playerOne, playerTwo);
 
-  let currentPlayer = "Homer";
-  switchPlayers(currentPlayer);
+  
+  // let currentPlayer = "Homer";
+  // switchPlayers(currentPlayer);
+  
+  playerOne.switchPlayers();
 
   // Determine whose turn it is, so that when "roll again" button is clicked, it affects that player's roundPoints score.
 
-  document.getElementById("call-turn-function").addEventListener("click", p1Turn);
+  // document.getElementById("call-turn-function").addEventListener("click", p1Turn);
 
 }
