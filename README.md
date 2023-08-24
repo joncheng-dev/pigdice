@@ -74,10 +74,21 @@ current;
 Expected Output: 5
 
 Test 10: "when rollLogic() is called and a 1 is rolled, the player should switch from homer to barney"
-Code: currentPlayer = "Homer";
-rollLogic();
-console.log(currentPlayer);
-Expected Output: "Barney";
+Code: 
+let playerOne = new Player("Homer");
+let playerTwo = new Player("Barney");
+// Have player 1 go first.
+playerOne.currentPlayer = true;
+// When rollLogic is called, and a 1 is rolled, the current player switches to Barney.
+rollLogic(roundPoints, playerOne, playerTwo);
+playerOne.switchPlayers();
+playerTwo.switchPlayers();
+playerOne.currentPlayer;
+playerTwo.currentPlayer;
+Expected Output: 
+false;
+true;
+
 
 Describe: switchPlayers()
 
