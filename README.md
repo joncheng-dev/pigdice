@@ -73,6 +73,17 @@ let current = rollPoints(roundPoints);
 current;
 Expected Output: 5
 
+Test 10: "when rollLogic() is called and a 1 is rolled, the player should switch from homer to barney"
+Code: currentPlayer = "Homer";
+rollLogic();
+console.log(currentPlayer);
+Expected Output: "Barney";
+
+Describe: switchPlayers()
+
+Test 9: "It should take a parameter of currentPlayer of value 'Homer' and return 'Barney'."
+Code: switchPlayers("Homer");
+Expected Output: "Barney";
 ```
 
 ## Technologies Used

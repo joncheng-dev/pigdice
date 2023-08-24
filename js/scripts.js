@@ -35,7 +35,7 @@ function rollLogic(roundPoints) {
 
     if (result === 1) {
       roundPoints = 0;
-      // switchPlayers();
+      
     } else {
       roundPoints = roundPoints + result;
       console.log(roundPoints);
